@@ -1,0 +1,235 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:RJ45_LED_Shielded J1
+U 1 1 5E249FC9
+P 2150 2300
+F 0 "J1" H 2150 2967 50  0000 C CNN
+F 1 "RJ45_LED_Shielded" H 2150 2876 50  0000 C CNN
+F 2 "GLR_KiCAD_Library:RJ45_Female_TE_6116173-4" V 2150 2325 50  0001 C CNN
+F 3 "~" V 2150 2325 50  0001 C CNN
+	1    2150 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:RJ45_LED_Shielded J2
+U 1 1 5E250506
+P 6000 2300
+F 0 "J2" H 6000 2967 50  0000 C CNN
+F 1 "RJ45_LED_Shielded" H 6000 2876 50  0000 C CNN
+F 2 "GLR_KiCAD_Library:RJ45_Female_TE_6116173-4" V 6000 2325 50  0001 C CNN
+F 3 "~" V 6000 2325 50  0001 C CNN
+	1    6000 2300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:RJ45_LED_Shielded J3
+U 1 1 5E254FCB
+P 4100 3450
+F 0 "J3" H 4100 4117 50  0000 C CNN
+F 1 "RJ45_LED_Shielded" H 4100 4026 50  0000 C CNN
+F 2 "GLR_KiCAD_Library:RJ45_Female_TE_6116173-4" V 4100 3475 50  0001 C CNN
+F 3 "~" V 4100 3475 50  0001 C CNN
+	1    4100 3450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 1900 3650 1900
+Wire Wire Line
+	2550 2000 3550 2000
+Wire Wire Line
+	2550 2100 3450 2100
+Wire Wire Line
+	2550 2200 3350 2200
+Wire Wire Line
+	2550 2400 3150 2400
+Wire Wire Line
+	2550 2600 2950 2600
+Wire Wire Line
+	3700 3050 3650 3050
+Wire Wire Line
+	3650 3050 3650 1900
+Connection ~ 3650 1900
+Wire Wire Line
+	3650 1900 4100 1900
+Wire Wire Line
+	3700 3150 3550 3150
+Wire Wire Line
+	3550 3150 3550 2000
+Connection ~ 3550 2000
+Wire Wire Line
+	3550 2000 4550 2000
+Wire Wire Line
+	3700 3250 3450 3250
+Wire Wire Line
+	3450 3250 3450 2100
+Connection ~ 3450 2100
+Wire Wire Line
+	3700 3350 3350 3350
+Wire Wire Line
+	3350 3350 3350 2200
+Connection ~ 3350 2200
+Wire Wire Line
+	3700 3450 3250 3450
+Wire Wire Line
+	3250 3450 3250 2300
+Connection ~ 3250 2300
+Wire Wire Line
+	3250 2300 5600 2300
+Wire Wire Line
+	3700 3550 3150 3550
+Wire Wire Line
+	3150 3550 3150 2400
+Connection ~ 3150 2400
+Wire Wire Line
+	3700 3650 3050 3650
+Wire Wire Line
+	3050 3650 3050 2500
+Connection ~ 3050 2500
+Wire Wire Line
+	3050 2500 5600 2500
+Wire Wire Line
+	3700 3750 2950 3750
+Wire Wire Line
+	2950 3750 2950 2600
+Connection ~ 2950 2600
+Wire Wire Line
+	2950 2600 5600 2600
+Text Label 4200 2600 0    50   ~ 0
+5V_1
+Text Label 4200 2500 0    50   ~ 0
+GND_1
+Text Label 4200 2400 0    50   ~ 0
+Reserved_1
+Text Label 4200 2300 0    50   ~ 0
+12V_1
+Text Label 4200 2200 0    50   ~ 0
+GND_2
+Text Label 4200 2100 0    50   ~ 0
+Reserved_2
+Text Label 4200 2000 0    50   ~ 0
+CAN_H
+Text Label 4200 1900 0    50   ~ 0
+CAN_L
+Wire Wire Line
+	1750 2500 1650 2500
+Wire Wire Line
+	1750 1900 1650 1900
+Wire Wire Line
+	1650 1900 1650 2500
+Connection ~ 1650 2500
+Wire Wire Line
+	1650 2500 1650 2950
+Wire Wire Line
+	2650 2500 2650 2950
+Wire Wire Line
+	2550 2850 2550 2600
+Connection ~ 2550 2600
+Connection ~ 2650 2500
+Wire Wire Line
+	2650 2500 3050 2500
+Wire Wire Line
+	2550 2500 2650 2500
+Wire Wire Line
+	1650 2950 2650 2950
+Wire Wire Line
+	1750 2000 1550 2000
+Wire Wire Line
+	2150 2800 2150 5000
+Wire Wire Line
+	2150 5000 4100 5000
+Wire Wire Line
+	6000 5000 6000 2800
+Wire Wire Line
+	4100 3950 4100 5000
+Connection ~ 4100 5000
+Wire Wire Line
+	4100 5000 6000 5000
+$Comp
+L Device:R R2
+U 1 1 5E274197
+P 1400 2000
+F 0 "R2" V 1193 2000 50  0000 C CNN
+F 1 "1200" V 1284 2000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1330 2000 50  0001 C CNN
+F 3 "~" H 1400 2000 50  0001 C CNN
+	1    1400 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5E2752A9
+P 1350 2600
+F 0 "R4" V 1143 2600 50  0000 C CNN
+F 1 "300" V 1234 2600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1280 2600 50  0001 C CNN
+F 3 "~" H 1350 2600 50  0001 C CNN
+	1    1350 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2750 3050 1050 3050
+Wire Wire Line
+	1050 3050 1050 2000
+Wire Wire Line
+	1050 2000 1250 2000
+Wire Wire Line
+	1750 2600 1500 2600
+Wire Wire Line
+	1150 2850 1150 2600
+Wire Wire Line
+	1150 2600 1200 2600
+Wire Wire Line
+	1150 2850 2550 2850
+$Comp
+L Device:R R1
+U 1 1 5E287A8C
+P 4300 1750
+F 0 "R1" V 4093 1750 50  0000 C CNN
+F 1 "Optional_end_120" V 4184 1750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4230 1750 50  0001 C CNN
+F 3 "~" H 4300 1750 50  0001 C CNN
+	1    4300 1750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4150 1750 4100 1750
+Wire Wire Line
+	4100 1750 4100 1900
+Connection ~ 4100 1900
+Wire Wire Line
+	4100 1900 5600 1900
+Wire Wire Line
+	4450 1750 4550 1750
+Wire Wire Line
+	4550 1750 4550 2000
+Connection ~ 4550 2000
+Wire Wire Line
+	4550 2000 5600 2000
+Wire Wire Line
+	2550 2300 2750 2300
+Wire Wire Line
+	2750 3050 2750 2300
+Connection ~ 2750 2300
+Wire Wire Line
+	2750 2300 3250 2300
+Wire Wire Line
+	3450 2100 5600 2100
+Wire Wire Line
+	3350 2200 5600 2200
+Wire Wire Line
+	3150 2400 5600 2400
+$EndSCHEMATC
